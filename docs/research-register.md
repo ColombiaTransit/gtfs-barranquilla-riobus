@@ -113,3 +113,14 @@ Search: `site:barranquilla.gov.co "Karakalí"` with an approximately one-year pu
 - [District development plan 2024–2027 (municipal gazette PDF)](https://barranquilla.gov.co/wp-content/uploads/2025/12/Plan-Desarrollo-2024-2027OCR.pdf): mentions Karakalí as a multimodal transport initiative; policy context only, not a current timetable.
 
 **Conclusion:** No newer official municipal route map, GPS track, additional passenger stop or revised departure timetable found in this targeted search. Continue treating Puerta de Oro as the sole verified boarding point and Puerto Mocho as an unverified destination/turnaround landmark.
+
+## All-years municipal search — 2026-11-06
+
+A broad search of `site:barranquilla.gov.co "Karakalí"` (without a one-year filter) surfaced additional historic primary sources:
+
+- [2023-09-20 — DIMAR recommendations before commercial navigation](https://barranquilla.gov.co/secretaria-general-del-distrito/riobus-atiende-recomendaciones-de-dimar-antes-de-navegar-comercialmente): technical inspection and adjustments (anticorrosive coating, air conditioning, window sun filters); some invitation-only passenger trips had occurred, but **commercial service was not yet fully authorized/operational at that date**. This helps date the transition from testing to commercial operation.
+- [2023-07-04 — RíoBus arrives at Gran Malecón](https://barranquilla.gov.co/secretaria-general-del-distrito/barranquilla-recibe-al-riobus-en-el-gran-malecon): planned 6.7 km Puerta de Oro–Intendencia via Los Tramposos, capacity 60, accessibility provision, bike storage. **Puerto Mocho and Suan are explicitly described as future ambitions**, not stops on the initial route.
+- [2024 tourism year in review](https://barranquilla.gov.co/desarrolloeconomico/consolidado-barranquilla-destino-turistico-atractivo-2024): confirms Karakalí was promoted as an active tourist boat during 2024; does not establish an itinerary, schedule or intermediate boarding stop.
+- [2023-07-10 — Project background and construction](https://barranquilla.gov.co/mi-barranquilla/con-el-riobus-renace-el-sueno-navegante-de-recorrer-el-rio-magdalena): shipbuilder Khalela, vessel length 53 ft, height 4.5 m, contextual background only.
+
+**Evidence chronology:** June–September 2023 planning/testing and DIMAR work; November–December 2023 intended Intendencia commercial launch; 2024 tourism operation; 2025–2026 current Puerta de Oro tourist loop. This chronology is a synthesis, not proof of the exact date of route changes. Do not turn the 2023 Puerta de Oro–Intendencia route or future Puerto Mocho plans into present-day GTFS stops without independent operational evidence.
