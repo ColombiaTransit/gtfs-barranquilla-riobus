@@ -92,3 +92,12 @@ The following sources were identified on Barranquilla's municipal websites. Curr
 - **Ticket-office hours:** weekdays 12:00–17:00; weekends and public holidays 09:00–11:30 and 12:30–17:00. These are **ticket office** hours, not trip departure times.
 - **Evidence strength:** corroborates the Visit Barranquilla published schedule and confirms the Monday-holiday maintenance exception; operational changes after publication remain possible.
 - **Remaining gaps:** precise pier GPS, defensible navigation shape, verified 45-minute scheduled round-trip duration, and official current fare policy.
+
+## Route-direction evidence — Destination Barranquilla (2026-11-06 review)
+
+- **Source:** [Destination Barranquilla — Karakalí River Bus](https://baq.com.co/iconic-places/karakali-river-bus/). The page describes the route as **“Gran Malecón – Puerto Mocho”**, a trip *towards Puerto Mocho*, and says the river bus links Gran Malecón with the historic river port / city beach.
+- **Other fields:** Puerta de Oro / Gran Malecón pier; Tue–Fri 14:00 and 17:00, weekends and holidays 11:00, 14:00 and 17:00; approximately 45 minutes; COP 15,000; children under two free; capacity 60; reduced-mobility accessibility.
+- **Critical ambiguity:** This route label does **not** establish that passengers may board/alight at Puerto Mocho, nor that the trip terminates there. It conflicts in emphasis with the previously documented 2025 report of a cruise departing and returning to Puerta de Oro.
+- **GTFS action:** treat Puerto Mocho as a **candidate turnaround / navigation landmark**, not a verified stop. Do not create a Puerto Mocho stop or shape based solely on this page.
+- **Follow-up:** seek operator map, ticketing details or first-hand evidence confirming whether Puerto Mocho is a scheduled passenger stop or merely the cruise's direction/turning point.
+- **Distinct commercial tour:** [Costa Tours Group Karakalí package](https://baq.com.co/tours/sailing-the-great-river-karakali/) advertises a two-hour hotel-pickup excursion with guide (Tue–Sat 16:00–18:00), priced separately at COP 145,000 or COP 245,000 solo. Its package duration and price **must not** replace the RíoBus's 45-minute / COP 15,000 service data.
