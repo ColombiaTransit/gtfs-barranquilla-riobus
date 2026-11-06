@@ -54,15 +54,15 @@ def build(start, end):
     for service,departures in (("regular",["14:00:00","17:00:00"]),("weekend_1100",["11:00:00"])):
         for depart in departures:
             trip=service+"_"+depart[:2]
-            trips.append(["karakali",service,trip,"riobus_osm_1499062007"])
+            trips.append(["karakali",service,trip,"riobus_osm_1499062007",2])
             h,m=map(int,depart[:5].split(":"))
             arrive=f"{h+(m+45)//60:02d}:{(m+45)%60:02d}:00"
             times.extend([[trip,depart,depart,"puerta_de_oro_pier",1,0],
                           [trip,arrive,arrive,"puerta_de_oro_pier",2,round(distance/1000,5)]])
-    out["trips.txt"]=table("route_id,service_id,trip_id,shape_id",trips)
+    out["trips.txt"]=table("route_id,service_id,trip_id,shape_id,bikes_allowed",trips)
     out["stop_times.txt"]=table("trip_id,arrival_time,departure_time,stop_id,stop_sequence,shape_dist_traveled",times)
-    out["feed_info.txt"]=table("feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date",[
-        ["ColombiaTransit","https://github.com/ColombiaTransit/gtfs-barranquilla-riobus","es",date(start),date(end)]])
+    out["feed_info.txt"]=table("feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version,feed_contact_url",[
+        ["ColombiaTransit","https://github.com/ColombiaTransit/gtfs-barranquilla-riobus","es",date(start),date(end),date(start)+".1","https://github.com/ColombiaTransit/gtfs-barranquilla-riobus/issues"]])
     target=ROOT/"dist/gtfs-barranquilla-riobus.zip"
     target.parent.mkdir(exist_ok=True)
     with zipfile.ZipFile(target,"w",zipfile.ZIP_DEFLATED) as archive:
