@@ -79,3 +79,16 @@ The following sources were identified on Barranquilla's municipal websites. Curr
 - **Confirmed for preliminary schedule model:** tourist service, Puerta de Oro pier name/address, approximate 45-minute duration, weekday/weekend/holiday departure times.
 - **Requires verification:** actual precise stop coordinates, shape, calendar treatment of holiday Mondays and following Tuesdays, operator identity in 2026, and exact return-to-pier time.
 - **Do not include:** historic COP 6,000 fare as current, proposed Intendencia point-to-point trips, or unverified extended routes.
+
+## Published fare, calendar exception and current operating model (2025)
+
+- **Source:** [Alerta — Horarios y precios del Riobus Karakalí en Barranquilla desde el 15](https://www.alerta.com.co/bolsillo/horarios-y-precios-del-riobus-karakali-en-barranquilla-desde-el-15-227528). Secondary news report concerning fare introduction on **2025-11-15**.
+- **Fare:** COP 15,000 per person from 2025-11-15; children under two free. Do not use the 2023 announced COP 6,000 fare for current operation.
+- **Route pattern:** sightseeing cruise **departs from and returns to Muelle Puerta de Oro**. No Intendencia Fluvial stop is identified for this operation.
+- **Departure times:** Tuesday–Friday 14:00 and 17:00; Saturday, Sunday and Colombian public holidays 11:00, 14:00 and 17:00. Regular Mondays closed except holidays.
+- **Calendar exception:** when Monday is a public holiday, **the following Tuesday has no service**. This is explicitly reported and should be implemented as a GTFS calendar_dates exception.
+- **Operating organization:** Puerta de Oro Empresa de Desarrollo Caribe operates the cruise.
+- **Fare collection:** Transmetro S.A.S. handles ticket collection; cash and Transmetro card accepted at the Puerta de Oro ticket office. Do not conflate fare collector with operator in agency.txt.
+- **Ticket-office hours:** weekdays 12:00–17:00; weekends and public holidays 09:00–11:30 and 12:30–17:00. These are **ticket office** hours, not trip departure times.
+- **Evidence strength:** corroborates the Visit Barranquilla published schedule and confirms the Monday-holiday maintenance exception; operational changes after publication remain possible.
+- **Remaining gaps:** precise pier GPS, defensible navigation shape, verified 45-minute scheduled round-trip duration, and official current fare policy.
