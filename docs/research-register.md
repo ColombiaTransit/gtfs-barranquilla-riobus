@@ -101,3 +101,15 @@ The following sources were identified on Barranquilla's municipal websites. Curr
 - **GTFS action:** treat Puerto Mocho as a **candidate turnaround / navigation landmark**, not a verified stop. Do not create a Puerto Mocho stop or shape based solely on this page.
 - **Follow-up:** seek operator map, ticketing details or first-hand evidence confirming whether Puerto Mocho is a scheduled passenger stop or merely the cruise's direction/turning point.
 - **Distinct commercial tour:** [Costa Tours Group Karakalí package](https://baq.com.co/tours/sailing-the-great-river-karakali/) advertises a two-hour hotel-pickup excursion with guide (Tue–Sat 16:00–18:00), priced separately at COP 145,000 or COP 245,000 solo. Its package duration and price **must not** replace the RíoBus's 45-minute / COP 15,000 service data.
+
+## Targeted municipal search — last year (2026-11-06)
+
+Search: `site:barranquilla.gov.co "Karakalí"` with an approximately one-year publication window.
+
+- [2026-06-16 — Barranquilla among Colombia's accessible tourism destinations](https://barranquilla.gov.co/gerencia-desarrollo-social/barranquilla-fue-seleccionada-entre-los-10-destinos-turisticos-mas-accesibles-de-colombia): Karakalí listed among accessible tourism attractions. **This does not independently establish the GTFS wheelchair_boarding field for the pier or vessel**; retain as accessibility context.
+- [2026-03-31 — Semana Santa tourism announcement](https://barranquilla.gov.co/mi-barranquilla/en-semana-santa-conecta-con-mallorquin-el-rio-magdalena-y-puerto-mocho): already registered; confirms normal operation during Easter period, no new trip times.
+- [2025-12-27 — year-end tourism announcement](https://barranquilla.gov.co/mi-barranquilla/barranquilla-se-prepara-para-despedir-el-2025-en-sus-principales-atractivos-turisticos-conectados-con-la-naturaleza): already registered; no additional timetable.
+- [2026-07 — Gran Malecón nine-year anniversary](https://barranquilla.gov.co/obraspublicas/aniversario-del-gran-malecon-9-anos-uniendo-el-corazon-de-barranquilleros-y-visitantes-con-el-rio-magdalena): already registered; aggregate trip/ridership counts, no route geometry.
+- [District development plan 2024–2027 (municipal gazette PDF)](https://barranquilla.gov.co/wp-content/uploads/2025/12/Plan-Desarrollo-2024-2027OCR.pdf): mentions Karakalí as a multimodal transport initiative; policy context only, not a current timetable.
+
+**Conclusion:** No newer official municipal route map, GPS track, additional passenger stop or revised departure timetable found in this targeted search. Continue treating Puerta de Oro as the sole verified boarding point and Puerto Mocho as an unverified destination/turnaround landmark.
