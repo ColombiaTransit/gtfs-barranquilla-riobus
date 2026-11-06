@@ -36,3 +36,11 @@ A round trip may use the same stop as first and last stop with increasing stop_s
 - Historic Puerta de Oro–Intendencia Fluvial articles
 
 All operational times remain provisional until the cited source material is captured and reviewed.
+
+## Municipal evidence — Karakalí tourist operation (2023)
+
+- **Source:** [Alcaldía de Barranquilla — RíoBús: Karakalí](https://barranquilla.gov.co/funcionarios/riobus-karakali), published **2023-10-25**.
+- **Confirmed by source:** municipal employees took a Karakalí cruise on the Magdalena River; the article describes a guided sightseeing experience, music, traditional dances and wildlife observation.
+- **Interpretation:** evidence of an actual tourism-oriented cruise in October 2023, distinct from the 2022 planned point-to-point service.
+- **Not provided:** precise pier, itinerary/track, timetable, trip duration, fares, or proof of the current 2026 operating pattern.
+- **GTFS use:** historical service context only; no new stop, trip or shape may be generated from this article alone.
