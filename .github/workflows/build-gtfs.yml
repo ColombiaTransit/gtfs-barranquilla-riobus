@@ -1,0 +1,39 @@
+name: Build provisional RíoBus GTFS
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/riobus-osm.json'
+      - 'scripts/build_gtfs.py'
+      - 'requirements.txt'
+      - '.github/workflows/build-gtfs.yml'
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Generate provisional feed
+        run: python scripts/build_gtfs.py 2026-11-06 2027-11-05
+      - name: Inspect generated feed
+        run: |
+          python - <<'PY'
+          import csv, io, zipfile
+          path='dist/gtfs-barranquilla-riobus.zip'
+          with zipfile.ZipFile(path) as z:
+              names=set(z.namelist())
+              assert {'agency.txt','routes.txt','stops.txt','trips.txt','stop_times.txt','calendar.txt','calendar_dates.txt','shapes.txt','feed_info.txt'} <= names
+              for name in names:
+                  rows=list(csv.DictReader(io.StringIO(z.read(name).decode())))
+                  print(name, len(rows))
+                  assert rows or name=='calendar_dates.txt'
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: provisional-riobus-gtfs
+          path: dist/gtfs-barranquilla-riobus.zip
