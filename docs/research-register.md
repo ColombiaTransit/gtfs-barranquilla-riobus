@@ -124,3 +124,17 @@ A broad search of `site:barranquilla.gov.co "Karakalí"` (without a one-year fil
 - [2023-07-10 — Project background and construction](https://barranquilla.gov.co/mi-barranquilla/con-el-riobus-renace-el-sueno-navegante-de-recorrer-el-rio-magdalena): shipbuilder Khalela, vessel length 53 ft, height 4.5 m, contextual background only.
 
 **Evidence chronology:** June–September 2023 planning/testing and DIMAR work; November–December 2023 intended Intendencia commercial launch; 2024 tourism operation; 2025–2026 current Puerta de Oro tourist loop. This chronology is a synthesis, not proof of the exact date of route changes. Do not turn the 2023 Puerta de Oro–Intendencia route or future Puerto Mocho plans into present-day GTFS stops without independent operational evidence.
+
+
+## OSM route geometry incorporated — 2026-11-06
+
+- **Input:** user-provided Overpass export (OSM snapshot 2026-11-06T09:45:35Z).
+- **OSM way:** [1499062007](https://www.openstreetmap.org/way/1499062007), tagged `route=ferry`, `name=Riobus`, `duration=45`; 55 ordered coordinates with identical first and last coordinate.
+- **Terminal:** [OSM node 13727727382](https://www.openstreetmap.org/node/13727727382), `amenity=ferry_terminal`, `name=Riobus`; 11.0259298, -74.7987708. Matches both endpoints of the route.
+- **Nearby pier:** [OSM way 907104485](https://www.openstreetmap.org/way/907104485), Muelle Principal - Puerta de Oro del Gran Malecón.
+- **Reproducible input:** `data/riobus-osm.json` is a reduced, locally archived copy of the relevant OSM coordinates and terminal; `scripts/build_gtfs.py` produces the preliminary GTFS ZIP.
+- **Model:** one circular ferry route; Puerta de Oro is the only boarding/alighting stop. No Puerto Mocho or Intendencia stop is created.
+- **Calendar assumption:** Tue–Fri 14:00/17:00, weekends and holidays 11:00/14:00/17:00, holiday Mondays open, following Tuesdays closed. Holiday dates computed from the Colombia holidays library.
+- **Duration assumption:** 45-minute return journey, derived from OSM tag and published tourism duration, not a measured arrival.
+- **Limitations:** OSM geometry is not independently verified as an actual vessel GPS track; timetable may change. This is a preliminary feed, not yet MobilityData-validated or published.
+- **Attribution:** © OpenStreetMap contributors, ODbL: https://www.openstreetmap.org/copyright
