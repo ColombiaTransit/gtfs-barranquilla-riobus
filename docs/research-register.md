@@ -1,0 +1,38 @@
+# RíoBus Karakalí — research register
+
+Last reviewed: 2026-11-06. Research status: **preliminary**. The operational claims below are leads from the previous project discussion and must be checked against current primary sources before GTFS publication.
+
+| Topic | Preliminary information | Evidence status | GTFS implication |
+| --- | --- | --- | --- |
+| Service | RíoBus Karakalí, Barranquilla | Name identified in project discussion | Verify agency and route naming |
+| Boarding point | Muelle Puerta de Oro, Gran Malecón | Secondary information; exact coordinates unverified | Stop point must be verified |
+| Current service pattern | Tourist round trip starting and ending at Puerta de Oro | Preliminary information | Model as circular trip only if confirmed |
+| Tue–Fri departures | 14:00, 17:00 | Preliminary published schedule; current validity unverified | Do not publish until verified |
+| Weekend and public holiday departures | 11:00, 14:00, 17:00 | Preliminary published schedule; current validity unverified | Holiday exceptions require review |
+| Mondays | Closed except public holidays | Preliminary published schedule | Confirm maintenance exceptions |
+| Tuesday after holiday Monday | Closed | Preliminary published schedule | Confirm maintenance exceptions |
+| Trip duration | Approximately 45 minutes | Preliminary estimate | Verify arrival time and whether 45 minutes is total loop |
+| Fare | COP 15,000 | Preliminary published figure | Confirm if publishing fares |
+| Historic river connection | Puerta de Oro–Intendencia Fluvial | Historical references | Do not conflate with current tourist loop |
+
+## Open research tasks
+
+1. Locate and archive current official RíoBus/Karakalí operating timetable, terms, calendar and operator.
+2. Verify the exact Puerta de Oro embarkation point (coordinates, OSM features, signage).
+3. Determine actual cruise route/turnaround geometry using official maps, OSM, GPX or other defensible geospatial data.
+4. Verify whether a second boarding point or historical route is currently active.
+5. Confirm vessel capacity and service duration if useful for metadata.
+6. Decide GTFS route_type for water transport, implement reproducible generator, and validate with MobilityData.
+7. Publish a versioned GitHub Release with a fixed asset name `gtfs-barranquilla-riobus.zip`.
+
+## GTFS modeling principles
+
+A round trip may use the same stop as first and last stop with increasing stop_sequence and distinct times. Do not invent intermediate stops. A shape must follow an evidenced navigable river path; do not reuse the historical point-to-point alignment without verification.
+
+## Source leads (not yet verified for currency)
+
+- Barranquilla tourism / Gran Malecón official publications
+- RíoBus Karakalí operator announcements
+- Historic Puerta de Oro–Intendencia Fluvial articles
+
+All operational times remain provisional until the cited source material is captured and reviewed.
