@@ -54,3 +54,28 @@ All operational times remain provisional until the cited source material is capt
 - **Service characterization:** initially a tourist ride, with a longer-term sustainable water-transport ambition.
 - **Evidence limitation:** this article does **not** establish a present-day operating route, departures, arrival times, current ticket price, or navigable shape. Do not create current GTFS trips or fares solely from it.
 - **Research consequence:** keep the historic/planned Puerta de Oro–Intendencia connection separate from any verified contemporary tourist loop.
+
+## Municipal website survey — 2026-11-06
+
+The following sources were identified on Barranquilla's municipal websites. Current and historical operating models must not be merged.
+
+### Current tourism service
+
+- [Visit Barranquilla — RíoBus Karakalí](https://visit.barranquilla.gov.co/planes/karakali): Muelle Puerta de Oro, Vía 40 #79B-06; sightseeing cruise approximately 45 minutes; Tuesday–Friday departures 14:00 and 17:00; Saturday, Sunday and public holidays 11:00, 14:00 and 17:00. The page does not explicitly specify Monday service or Tuesday-after-Monday-holiday maintenance. Ticket price is marked "consult prices"; do not reuse the 2023 fare.
+- [Municipal Easter 2026 announcement](https://barranquilla.gov.co/mi-barranquilla/en-semana-santa-conecta-con-mallorquin-el-rio-magdalena-y-puerto-mocho), 2026-03-31: RíoBus Karakalí expected to operate normally during Holy Week 2026; Puerta de Oro boarding confirmed.
+- [Gran Malecón ninth anniversary](https://barranquilla.gov.co/obraspublicas/aniversario-del-gran-malecon-9-anos-uniendo-el-corazon-de-barranquilleros-y-visitantes-con-el-rio-magdalena), 2026-07-17: >1,900 departures and 95,580 transported people reported; departure pier Puerta de Oro.
+- [2025 year-end tourism announcement](https://barranquilla.gov.co/mi-barranquilla/barranquilla-se-prepara-para-despedir-el-2025-en-sus-principales-atractivos-turisticos-conectados-con-la-naturaleza), 2025-12-27: Karakalí expected to operate on normal hours during year-end season.
+- [Municipal employee excursion](https://barranquilla.gov.co/intranet/embajadores-cheveres-navegaron-en-el-riobus-karakali), 2025-08-15: evidence of actual 2025 cruises, not a timetable.
+
+### Historical service and waterway
+
+- [Initial commercial operation announcement](https://barranquilla.gov.co/control-disciplinario/riobus-karakali-sera-operado-por-puerta-de-oro-iniciara-con-tres-rutas-diarias-de-lunes-a-viernes), 2023-12-16: Puerta de Oro Empresa de Desarrollo Caribe identified as responsible for operation; three weekday departures planned, weekends demand-responsive; initial free period; Puerta de Oro and Intendencia Fluvial docks. This schedule is superseded for current-feed modeling by the tourism site.
+- [Preparations for navigation](https://barranquilla.gov.co/secretaria-general-del-distrito/karakali-en-preparativos-logisticos-para-conectarnos-mas-con-el-rio-magdalena), 2023-07-07: AQUAMAR S.A. named as selected operator at that stage, with a planned ~7 km Puerta de Oro–Intendencia route via Los Tramposos. Relationship to later Puerta de Oro operation unresolved.
+- [Dredging Los Tramposos](https://barranquilla.gov.co/mi-barranquilla/dragado-del-cano-los-tramposos-se-suma-a-reactivacion-de-la-intendencia-fluvial-y-el-cabrito), 2023-09-19: ~1.7 km channel access section to Intendencia; channel was being cleared to allow passage. Do not infer a current cruise shape from this.
+- [Launch announcement](https://barranquilla.gov.co/mi-barranquilla/el-riobus-esta-listo-para-empezar-a-navegar-en-barranquilla), 2023-06-27: planned ~7 km first phase (roughly 6 km river, 1 km Los Tramposos, per article); later ambitions Puerto Mocho and Suan were not evidence of operation.
+
+### GTFS readiness after survey
+
+- **Confirmed for preliminary schedule model:** tourist service, Puerta de Oro pier name/address, approximate 45-minute duration, weekday/weekend/holiday departure times.
+- **Requires verification:** actual precise stop coordinates, shape, calendar treatment of holiday Mondays and following Tuesdays, operator identity in 2026, and exact return-to-pier time.
+- **Do not include:** historic COP 6,000 fare as current, proposed Intendencia point-to-point trips, or unverified extended routes.
