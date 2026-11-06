@@ -138,3 +138,7 @@ A broad search of `site:barranquilla.gov.co "Karakalí"` (without a one-year fil
 - **Duration assumption:** 45-minute return journey, derived from OSM tag and published tourism duration, not a measured arrival.
 - **Limitations:** OSM geometry is not independently verified as an actual vessel GPS track; timetable may change. This is a preliminary feed, not yet MobilityData-validated or published.
 - **Attribution:** © OpenStreetMap contributors, ODbL: https://www.openstreetmap.org/copyright
+
+## Bicycle carriage — user confirmation (2026-11-06)
+
+The project owner confirms that **bicycles are not permitted aboard RíoBus Karakalí**. Set `bikes_allowed=2` on every generated GTFS trip. This is user-supplied operational information, not independently verified against a published operator policy.
