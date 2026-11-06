@@ -44,3 +44,13 @@ All operational times remain provisional until the cited source material is capt
 - **Interpretation:** evidence of an actual tourism-oriented cruise in October 2023, distinct from the 2022 planned point-to-point service.
 - **Not provided:** precise pier, itinerary/track, timetable, trip duration, fares, or proof of the current 2026 operating pattern.
 - **GTFS use:** historical service context only; no new stop, trip or shape may be generated from this article alone.
+
+## Municipal evidence — initial fare and intended route (2023-11-09)
+
+- **Primary source:** [Alcaldía de Barranquilla — El RioBús Karakalí ya tiene su tarifa inicial definida](https://barranquilla.gov.co/funcionarios/el-riobus-karakali-ya-tiene-su-tarifa-inicial-definida), published **2023-11-09**.
+- **Initial announced fare:** **COP 6,000** for the RíoBus journey. This is a historical launch fare, not evidence of the current fare.
+- **Intended route:** embark at **Muelle Puerta de Oro / Gran Malecón** and connect to **Intendencia Fluvial** in central Barranquilla.
+- **Operational context:** the mayor reported dredging of the canal to permit entry to Intendencia and comfort improvements following initial user feedback; the service was described as about to start operating.
+- **Service characterization:** initially a tourist ride, with a longer-term sustainable water-transport ambition.
+- **Evidence limitation:** this article does **not** establish a present-day operating route, departures, arrival times, current ticket price, or navigable shape. Do not create current GTFS trips or fares solely from it.
+- **Research consequence:** keep the historic/planned Puerta de Oro–Intendencia connection separate from any verified contemporary tourist loop.
